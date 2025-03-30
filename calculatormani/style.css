@@ -1,0 +1,135 @@
+* {
+    margin: 100;
+    padding: 100;
+    box-sizing: border-box;
+    background-color: palevioletred;
+    font-family:  sans-serif;
+    outline: none;
+}
+
+
+.container {
+    height: 100vh;
+    width: 300vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator {
+    background-color: rgba(255, 255, 255, 0.1);;
+    backdrop-filter: blur(20px);
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.3)
+                      4px 4px 10px  rgba(200, 255, 200, 0.6);
+    display: grid;
+    grid-template-columns: repeat(4,90px);
+}
+
+input{
+    grid-column: span 4;
+    height: 100px;
+    width: 260px;
+    box-shadow: inset -5px -5px 12px #1b0405,
+                inset 5x 5px 12px rgba(204, 105, 105, 0.8);
+    border: none;
+    border-radius: 20px;
+    color: rgb(70,70,70);
+    font-size: 70px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+
+button {
+    width: 48px;
+    height: 48px;
+    background-color: #1c537e;
+
+    border: none;
+    border-radius: 50%;
+    margin: 8px;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    color: rgb(44, 5, 5);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.equal{
+    width: 130px;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    color: rgb(44, 5, 5);
+
+}
+#output-screen {
+    width: 100%;
+    height: 50%;
+    font-size: 30px;
+    text-align: right;
+    margin-bottom: 30px;
+    padding: 50px;
+    border: none;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #2b2323;
+}
+
+/* imp!Section-10 (Footer Section) */
+
+.footer-section{
+    background-color: var(--sky-blue);
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons{
+    display: flex;
+    gap: 2rem;
+}
+
+.social-icons i{
+    color: var(--pure-white);
+    font-size: 1.8rem;
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    border: 0.1rem solid var(--pure-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+    opacity: 0.75;
+    transition: 0.5s;
+}
+
+.social-icons i:hover{
+    opacity: 1;
+}
+
+   /* imp! Section-9 (Footer Section) */
+
+   .footer-section{
+    padding: 3rem;
+}
+
+.copyright-txt{
+    font-size: 1.4rem;
+}
+
+.social-icons i{
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.4rem;
+}
+
+
+
+
